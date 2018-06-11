@@ -30,6 +30,22 @@
 				</tr>
 			</tbody>
 		</table>
+		<table>
+			<tbody>
+				<tr>
+					<th>Latitute :</th>
+					<td>{{location.lat}}</td>
+				</tr>
+				<tr>
+					<th>Longtitute :</th>
+					<td>{{location.lng}}</td>
+				</tr>
+				<tr>
+					<th>Time :</th>
+					<td>{{location.timestamp}}</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	<div v-show="!location.detected">
 		<p>Your current location couldn't detect by system, please make sure you allowed GPS and internet connections.</p>

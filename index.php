@@ -22,7 +22,7 @@
                 <div class="nav-wrapper grey lighten-4 app-header">
                     <span class="app-header-title">
                         <?php
-                            if($request == 'dashboard' && @$_SESSION['user']['level'] == 0){
+                            if($request == 'dashboard' && @$_SESSION['user']['level'] == '0'){
                         ?>
                         <div class="switch">
                             <label>
@@ -56,6 +56,20 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="js/main.js"></script>
+        <?php
+            if($request == 'dashboard' && @$_SESSION['user']['level'] == '0'){
+        ?>
+        <script type="text/javascript" src="js/driver.js?v=<?php echo rand(0,111111111); ?>"></script>
+        <?php
+            }
+        ?>
+
+        <?php
+            if($request == 'dashboard' && @$_SESSION['user']['level'] == '1'){
+        ?>
+        <script type="text/javascript" src="js/customer.js?v=<?php echo rand(0,111111111); ?>"></script>
+        <?php
+            }
+        ?>
     </body>
 </html>
