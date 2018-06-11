@@ -1,0 +1,37 @@
+body{
+	background:#fbfbfb;
+	font-size: 1.2em;
+}
+
+.no-shadow{
+	box-shadow:none;
+}
+
+.app-header{
+	background-image: url('../images/logo.png');
+	background-size: auto 50%;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+}
+
+#content{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.or-seperator{
+	color: #666;
+	text-align: center;
+	margin: 30px 0px;
+}
+
+.app-header-title{
+	text-align: right;
+	color: #333;
+	font-size: 1em;
+	display: block;
+	float: right;
+	padding-right: 20px;
+	border-left: solid 2px #ddd;
+	padding-left: 20px;
+}
